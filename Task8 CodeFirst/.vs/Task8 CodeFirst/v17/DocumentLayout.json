@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alekhya.n\\source\\repos\\Task8 CodeFirst\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04436627-A926-4A94-9E67-A712C99E739B}|EMS\\EMS.csproj|c:\\users\\alekhya.n\\source\\repos\\task8 codefirst\\ems\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04436627-A926-4A94-9E67-A712C99E739B}|EMS\\EMS.csproj|solutionrelative:ems\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04436627-A926-4A94-9E67-A712C99E739B}|EMS\\EMS.csproj|c:\\users\\alekhya.n\\source\\repos\\task8 codefirst\\ems\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04436627-A926-4A94-9E67-A712C99E739B}|EMS\\EMS.csproj|solutionrelative:ems\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04436627-A926-4A94-9E67-A712C99E739B}|EMS\\EMS.csproj|c:\\users\\alekhya.n\\source\\repos\\task8 codefirst\\ems\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04436627-A926-4A94-9E67-A712C99E739B}|EMS\\EMS.csproj|solutionrelative:ems\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04436627-A926-4A94-9E67-A712C99E739B}|EMS\\EMS.csproj|c:\\users\\alekhya.n\\source\\repos\\task8 codefirst\\ems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04436627-A926-4A94-9E67-A712C99E739B}|EMS\\EMS.csproj|solutionrelative:ems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\alekhya.n\\source\\repos\\Task8 CodeFirst\\EMS\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "EMS\\Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\alekhya.n\\source\\repos\\Task8 CodeFirst\\EMS\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "EMS\\Controllers\\RolesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T10:45:24.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\alekhya.n\\source\\repos\\Task8 CodeFirst\\EMS\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EMS\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\alekhya.n\\source\\repos\\Task8 CodeFirst\\EMS\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EMS\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T10:45:20.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\alekhya.n\\source\\repos\\Task8 CodeFirst\\EMS\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "EMS\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\alekhya.n\\source\\repos\\Task8 CodeFirst\\EMS\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "EMS\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T10:45:14.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alekhya.n\\source\\repos\\Task8 CodeFirst\\EMS\\Program.cs",
+              "RelativeDocumentMoniker": "EMS\\Program.cs",
+              "ToolTip": "C:\\Users\\alekhya.n\\source\\repos\\Task8 CodeFirst\\EMS\\Program.cs",
+              "RelativeToolTip": "EMS\\Program.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T05:24:21.642Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

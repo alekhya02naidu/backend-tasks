@@ -1,0 +1,108 @@
+2024-05-23 11:39:37.136 +05:30 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-23 11:39:37.272 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-23 11:39:37.283 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-23 11:39:37.290 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-23 11:39:37.326 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-23 11:39:37.348 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-05-23 11:39:37.374 +05:30 [INF] User profile is available. Using 'C:\Users\alekhya.n\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-23 11:39:37.424 +05:30 [WRN] The WebRootPath was not found: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS\wwwroot. Static files may be unavailable.
+2024-05-23 11:39:37.481 +05:30 [INF] Now listening on: http://localhost:5165
+2024-05-23 11:39:37.487 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 11:39:37.493 +05:30 [INF] Hosting environment: Development
+2024-05-23 11:39:37.496 +05:30 [INF] Content root path: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS
+2024-05-23 11:39:56.109 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5165/ - null null
+2024-05-23 11:39:56.208 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-23 11:39:56.319 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5165/ - 404 0 null 215.2737ms
+2024-05-23 11:39:56.459 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5165/, Response status code: 404
+2024-05-23 11:40:00.032 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - null null
+2024-05-23 11:40:00.173 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 null text/html;charset=utf-8 141.4833ms
+2024-05-23 11:40:00.330 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - null null
+2024-05-23 11:40:00.476 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.6428ms
+2024-05-23 11:40:17.798 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5165/Authentication/Login - application/json-patch+json 62
+2024-05-23 11:40:17.828 +05:30 [INF] Executing endpoint 'EMS.Controllers.AuthenticationController.Login (EMS)'
+2024-05-23 11:40:17.887 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.ResponseModel.ApiResponse`1[System.String]] Login(EMS.DAL.DTO.LoginDTO) on controller EMS.Controllers.AuthenticationController (EMS).
+2024-05-23 11:40:18.689 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[DOB], [e].[DepartmentId], [e].[Email], [e].[FirstName], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__email_0
+2024-05-23 11:40:19.888 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[DOB], [e].[DepartmentId], [e].[Email], [e].[FirstName], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid], [l].[Id], [l].[Name], [d].[Id], [d].[Name], [r].[Id], [r].[DepartmentId], [r].[Name], [e0].[Id], [e0].[DOB], [e0].[DepartmentId], [e0].[Email], [e0].[FirstName], [e0].[IsManager], [e0].[JoiningDate], [e0].[LastName], [e0].[LocationId], [e0].[ManagerId], [e0].[MobileNumber], [e0].[Password], [e0].[ProjectId], [e0].[RoleId], [e0].[Uid], [p].[Id], [p].[Name]
+FROM [Employees] AS [e]
+LEFT JOIN [Locations] AS [l] ON [e].[LocationId] = [l].[Id]
+LEFT JOIN [Departments] AS [d] ON [e].[DepartmentId] = [d].[Id]
+LEFT JOIN [Roles] AS [r] ON [e].[RoleId] = [r].[Id]
+LEFT JOIN [Employees] AS [e0] ON [e].[ManagerId] = [e0].[Id]
+LEFT JOIN [Projects] AS [p] ON [e].[ProjectId] = [p].[Id]
+WHERE [e].[Email] = @__email_0
+2024-05-23 11:40:20.079 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.ResponseModel.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-23 11:40:20.174 +05:30 [INF] Executed action EMS.Controllers.AuthenticationController.Login (EMS) in 2266.2273ms
+2024-05-23 11:40:20.180 +05:30 [INF] Executed endpoint 'EMS.Controllers.AuthenticationController.Login (EMS)'
+2024-05-23 11:40:20.185 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5165/Authentication/Login - 200 463 application/json; charset=utf-8 2387.1795ms
+2024-05-23 12:46:44.885 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-23 12:46:45.046 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-23 12:46:45.072 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-23 12:46:45.087 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-23 12:46:45.179 +05:30 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-23 12:46:45.210 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-05-23 12:46:45.260 +05:30 [INF] User profile is available. Using 'C:\Users\alekhya.n\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-23 12:46:45.405 +05:30 [WRN] The WebRootPath was not found: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS\wwwroot. Static files may be unavailable.
+2024-05-23 12:46:45.705 +05:30 [INF] Now listening on: https://localhost:7286
+2024-05-23 12:46:45.727 +05:30 [INF] Now listening on: http://localhost:5165
+2024-05-23 12:46:45.852 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 12:46:45.882 +05:30 [INF] Hosting environment: Development
+2024-05-23 12:46:45.885 +05:30 [INF] Content root path: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS
+2024-05-23 12:46:47.001 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger - null null
+2024-05-23 12:46:47.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger - 301 0 null 741.7118ms
+2024-05-23 12:46:47.774 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/index.html - null null
+2024-05-23 12:46:47.948 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/swagger-ui.css - null null
+2024-05-23 12:46:47.953 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/swagger-ui-standalone-preset.js - null null
+2024-05-23 12:46:47.950 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/swagger-ui-bundle.js - null null
+2024-05-23 12:46:47.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/index.html - 200 null text/html;charset=utf-8 185.8773ms
+2024-05-23 12:46:48.086 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/_vs/browserLink - null null
+2024-05-23 12:46:48.093 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-23 12:46:48.225 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 131.5353ms
+2024-05-23 12:46:48.229 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-23 12:46:48.229 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-23 12:46:48.328 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-23 12:46:48.344 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 390.8644ms
+2024-05-23 12:46:48.358 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/swagger-ui.css - 200 143943 text/css 409.2723ms
+2024-05-23 12:46:48.365 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 415.4402ms
+2024-05-23 12:46:48.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/_vs/browserLink - 200 null text/javascript; charset=UTF-8 354.5114ms
+2024-05-23 12:46:48.780 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - null null
+2024-05-23 12:46:48.855 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/favicon-32x32.png - null null
+2024-05-23 12:46:48.893 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-05-23 12:46:48.903 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/favicon-32x32.png - 200 628 image/png 47.5117ms
+2024-05-23 12:46:49.230 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 450.1304ms
+2024-05-23 20:13:24.360 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-23 20:13:24.459 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-23 20:13:24.469 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-23 20:13:24.492 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-23 20:13:24.527 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-23 20:13:24.553 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-05-23 20:13:24.583 +05:30 [INF] User profile is available. Using 'C:\Users\alekhya.n\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-23 20:13:24.638 +05:30 [WRN] The WebRootPath was not found: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS\wwwroot. Static files may be unavailable.
+2024-05-23 20:13:24.677 +05:30 [INF] Now listening on: http://localhost:5165
+2024-05-23 20:13:24.686 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 20:13:24.688 +05:30 [INF] Hosting environment: Development
+2024-05-23 20:13:24.692 +05:30 [INF] Content root path: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS

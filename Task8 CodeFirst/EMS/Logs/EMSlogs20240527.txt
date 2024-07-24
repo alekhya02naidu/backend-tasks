@@ -1,0 +1,61 @@
+2024-05-27 10:55:14.114 +05:30 [INF] Executed DbCommand (285ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-27 10:55:14.443 +05:30 [INF] Executed DbCommand (253ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-27 10:55:14.690 +05:30 [INF] Executed DbCommand (241ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-27 10:55:14.977 +05:30 [INF] Executed DbCommand (241ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-27 10:55:15.249 +05:30 [INF] Executed DbCommand (238ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-27 10:55:15.300 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-05-27 10:55:15.340 +05:30 [INF] User profile is available. Using 'C:\Users\alekhya.n\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-27 10:55:15.449 +05:30 [WRN] The WebRootPath was not found: C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS\wwwroot. Static files may be unavailable.
+2024-05-27 10:55:15.700 +05:30 [INF] Now listening on: https://localhost:7286
+2024-05-27 10:55:15.701 +05:30 [INF] Now listening on: http://localhost:5165
+2024-05-27 10:55:15.852 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 10:55:15.859 +05:30 [INF] Hosting environment: Development
+2024-05-27 10:55:15.867 +05:30 [INF] Content root path: C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS
+2024-05-27 10:55:17.108 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/index.html - null null
+2024-05-27 10:55:17.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/index.html - 200 null text/html;charset=utf-8 453.3802ms
+2024-05-27 10:55:17.645 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/_vs/browserLink - null null
+2024-05-27 10:55:17.655 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 10:55:17.674 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 19.2948ms
+2024-05-27 10:55:17.749 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.3358ms
+2024-05-27 10:55:17.983 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - null null
+2024-05-27 10:55:18.264 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 281.385ms
+2024-05-27 10:55:55.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/Employee - null null
+2024-05-27 10:55:55.204 +05:30 [INF] Executing endpoint 'EMS.Controllers.EmployeeController.GetAllEmployee (EMS)'
+2024-05-27 10:55:55.228 +05:30 [INF] Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.ResponseModel.ApiResponse`1[EMS.DB.Models.PaginatedResult`1[EMS.DB.Models.EmployeeDetail]]] GetAllEmployee(Int32, Int32) on controller EMS.Controllers.EmployeeController (EMS).
+2024-05-27 10:55:55.778 +05:30 [INF] Executed DbCommand (254ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [EmployeeDetail] AS [e]
+2024-05-27 10:55:55.809 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-27 10:55:55.814 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-27 10:55:56.195 +05:30 [INF] Executed DbCommand (240ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DOB], [e].[DepartmentName], [e].[Email], [e].[FirstName], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationName], [e].[ManagerName], [e].[MobileNumber], [e].[ProjectName], [e].[RoleName], [e].[Uid]
+FROM [EmployeeDetail] AS [e]
+WHERE 0 = 1
+2024-05-27 10:55:56.209 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.ResponseModel.ApiResponse`1[[EMS.DB.Models.PaginatedResult`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-27 10:55:56.312 +05:30 [INF] Executed action EMS.Controllers.EmployeeController.GetAllEmployee (EMS) in 1078.4195ms
+2024-05-27 10:55:56.316 +05:30 [INF] Executed endpoint 'EMS.Controllers.EmployeeController.GetAllEmployee (EMS)'
+2024-05-27 10:55:56.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/Employee - 200 168 application/json; charset=utf-8 1238.6099ms
+2024-05-27 10:56:08.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/Employee?pageIndex=1&pageSize=5 - null null
+2024-05-27 10:56:08.473 +05:30 [INF] Executing endpoint 'EMS.Controllers.EmployeeController.GetAllEmployee (EMS)'
+2024-05-27 10:56:08.477 +05:30 [INF] Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.ResponseModel.ApiResponse`1[EMS.DB.Models.PaginatedResult`1[EMS.DB.Models.EmployeeDetail]]] GetAllEmployee(Int32, Int32) on controller EMS.Controllers.EmployeeController (EMS).
+2024-05-27 10:56:08.729 +05:30 [INF] Executed DbCommand (241ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [EmployeeDetail] AS [e]
+2024-05-27 10:56:08.734 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-27 10:56:08.735 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-27 10:56:09.024 +05:30 [INF] Executed DbCommand (274ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DOB], [e].[DepartmentName], [e].[Email], [e].[FirstName], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationName], [e].[ManagerName], [e].[MobileNumber], [e].[ProjectName], [e].[RoleName], [e].[Uid]
+FROM [EmployeeDetail] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-27 10:56:09.040 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.ResponseModel.ApiResponse`1[[EMS.DB.Models.PaginatedResult`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-27 10:56:09.054 +05:30 [INF] Executed action EMS.Controllers.EmployeeController.GetAllEmployee (EMS) in 574.2109ms
+2024-05-27 10:56:09.057 +05:30 [INF] Executed endpoint 'EMS.Controllers.EmployeeController.GetAllEmployee (EMS)'
+2024-05-27 10:56:09.060 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/Employee?pageIndex=1&pageSize=5 - 200 1704 application/json; charset=utf-8 597.2735ms

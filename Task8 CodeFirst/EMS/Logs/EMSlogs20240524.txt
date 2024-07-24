@@ -1,0 +1,113 @@
+2024-05-24 13:49:23.696 +05:30 [INF] Executed DbCommand (337ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-24 13:49:24.098 +05:30 [INF] Executed DbCommand (306ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-24 13:49:24.380 +05:30 [INF] Executed DbCommand (243ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-24 13:49:24.715 +05:30 [INF] Executed DbCommand (329ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-24 13:49:25.108 +05:30 [INF] Executed DbCommand (371ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-24 13:49:25.146 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-05-24 13:49:25.240 +05:30 [INF] User profile is available. Using 'C:\Users\alekhya.n\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-24 13:49:25.704 +05:30 [WRN] The WebRootPath was not found: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS\wwwroot. Static files may be unavailable.
+2024-05-24 13:49:25.929 +05:30 [INF] Now listening on: http://localhost:5165
+2024-05-24 13:49:25.943 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-24 13:49:26.037 +05:30 [INF] Hosting environment: Development
+2024-05-24 13:49:26.200 +05:30 [INF] Content root path: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS
+2024-05-24 13:49:49.855 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5165/ - null null
+2024-05-24 13:49:49.920 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-24 13:49:50.084 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5165/ - 404 0 null 233.7098ms
+2024-05-24 13:49:50.309 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5165/, Response status code: 404
+2024-05-24 13:49:58.317 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - null null
+2024-05-24 13:49:58.478 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 null text/html;charset=utf-8 161.4532ms
+2024-05-24 13:49:58.655 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - null null
+2024-05-24 13:49:58.914 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 259.2538ms
+2024-05-24 13:50:10.644 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5165/Employee?pageIndex=1&pageSize=5 - null null
+2024-05-24 13:50:10.663 +05:30 [INF] Executing endpoint 'EMS.Controllers.EmployeeController.GetAllEmployee (EMS)'
+2024-05-24 13:50:10.725 +05:30 [INF] Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.ResponseModel.ApiResponse`1[EMS.DB.Models.PaginatedResult`1[EMS.DB.Models.EmployeeDetail]]] GetAllEmployee(Int32, Int32) on controller EMS.Controllers.EmployeeController (EMS).
+2024-05-24 13:50:11.565 +05:30 [INF] Executed DbCommand (276ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [EmployeeDetail] AS [e]
+2024-05-24 13:50:11.673 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-24 13:50:11.679 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-24 13:50:12.201 +05:30 [INF] Executed DbCommand (289ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DOB], [e].[DepartmentName], [e].[Email], [e].[FirstName], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationName], [e].[ManagerName], [e].[MobileNumber], [e].[ProjectName], [e].[RoleName], [e].[Uid]
+FROM [EmployeeDetail] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-24 13:50:12.262 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.ResponseModel.ApiResponse`1[[EMS.DB.Models.PaginatedResult`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-24 13:50:12.476 +05:30 [INF] Executed action EMS.Controllers.EmployeeController.GetAllEmployee (EMS) in 1725.1767ms
+2024-05-24 13:50:12.484 +05:30 [INF] Executed endpoint 'EMS.Controllers.EmployeeController.GetAllEmployee (EMS)'
+2024-05-24 13:50:12.522 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5165/Employee?pageIndex=1&pageSize=5 - 200 1393 application/json; charset=utf-8 1877.8ms
+2024-05-24 15:07:23.653 +05:30 [INF] Executed DbCommand (264ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-24 15:07:24.007 +05:30 [INF] Executed DbCommand (265ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-24 15:07:24.240 +05:30 [INF] Executed DbCommand (227ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-24 15:07:24.639 +05:30 [INF] Executed DbCommand (394ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-24 15:07:24.957 +05:30 [INF] Executed DbCommand (254ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-24 15:07:24.987 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-05-24 15:07:25.041 +05:30 [INF] User profile is available. Using 'C:\Users\alekhya.n\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-24 15:07:25.142 +05:30 [WRN] The WebRootPath was not found: C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS\wwwroot. Static files may be unavailable.
+2024-05-24 15:07:25.383 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5165: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-05-24 15:08:00.695 +05:30 [INF] Executed DbCommand (257ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-24 15:08:01.014 +05:30 [INF] Executed DbCommand (247ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-24 15:08:01.254 +05:30 [INF] Executed DbCommand (235ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-24 15:08:01.496 +05:30 [INF] Executed DbCommand (238ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-24 15:08:01.791 +05:30 [INF] Executed DbCommand (262ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-24 15:08:01.810 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-05-24 15:08:01.856 +05:30 [INF] User profile is available. Using 'C:\Users\alekhya.n\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-24 15:08:01.962 +05:30 [WRN] The WebRootPath was not found: C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS\wwwroot. Static files may be unavailable.
+2024-05-24 15:08:02.126 +05:30 [INF] Now listening on: https://localhost:7286
+2024-05-24 15:08:02.131 +05:30 [INF] Now listening on: http://localhost:5165
+2024-05-24 15:08:02.207 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-24 15:08:02.210 +05:30 [INF] Hosting environment: Development
+2024-05-24 15:08:02.212 +05:30 [INF] Content root path: C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS
+2024-05-24 15:08:02.738 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/index.html - null null
+2024-05-24 15:08:03.002 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/index.html - 200 null text/html;charset=utf-8 269.9112ms
+2024-05-24 15:08:03.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-24 15:08:03.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/_vs/browserLink - null null
+2024-05-24 15:08:03.061 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 20.4098ms
+2024-05-24 15:08:03.142 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.4236ms
+2024-05-24 15:08:03.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - null null
+2024-05-24 15:08:03.508 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.7184ms

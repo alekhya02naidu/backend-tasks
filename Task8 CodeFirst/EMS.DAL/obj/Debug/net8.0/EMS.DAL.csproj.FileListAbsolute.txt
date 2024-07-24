@@ -1,0 +1,15 @@
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\bin\Debug\net8.0\EMS.DAL.deps.json
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\bin\Debug\net8.0\EMS.DAL.dll
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\bin\Debug\net8.0\EMS.DAL.pdb
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\bin\Debug\net8.0\EMS.DB.dll
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\bin\Debug\net8.0\EMS.DB.pdb
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\EMS.DAL.csproj.AssemblyReference.cache
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\EMS.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\EMS.DAL.AssemblyInfoInputs.cache
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\EMS.DAL.AssemblyInfo.cs
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\EMS.DAL.csproj.CoreCompileInputs.cache
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\EMS.DAL.csproj.Up2Date
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\EMS.DAL.dll
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\refint\EMS.DAL.dll
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\EMS.DAL.pdb
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DAL\obj\Debug\net8.0\ref\EMS.DAL.dll

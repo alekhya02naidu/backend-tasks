@@ -1,0 +1,14 @@
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\bin\Release\net8.0\EMS.DB.deps.json
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\bin\Release\net8.0\EMS.DB.runtimeconfig.json
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\bin\Release\net8.0\EMS.DB.dll
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\bin\Release\net8.0\EMS.DB.pdb
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\EMS.DB.csproj.AssemblyReference.cache
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\EMS.DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\EMS.DB.AssemblyInfoInputs.cache
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\EMS.DB.AssemblyInfo.cs
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\EMS.DB.csproj.CoreCompileInputs.cache
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\EMS.DB.dll
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\refint\EMS.DB.dll
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\EMS.DB.pdb
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\EMS.DB.genruntimeconfig.cache
+C:\Users\alekhya.n\source\repos\Task8 CodeFirst\EMS.DB\obj\Release\net8.0\ref\EMS.DB.dll

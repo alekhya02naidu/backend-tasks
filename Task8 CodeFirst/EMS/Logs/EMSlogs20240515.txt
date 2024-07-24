@@ -1,0 +1,20 @@
+2024-05-15 19:10:32.912 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-15 19:10:33.099 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-15 19:10:33.141 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-15 19:10:33.154 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-15 19:10:33.213 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-15 19:10:33.247 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-05-15 19:10:33.285 +05:30 [INF] User profile is available. Using 'C:\Users\alekhya.n\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-15 19:10:33.347 +05:30 [WRN] The WebRootPath was not found: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS\wwwroot. Static files may be unavailable.
+2024-05-15 19:10:33.403 +05:30 [INF] Now listening on: http://localhost:5165
+2024-05-15 19:10:33.412 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-15 19:10:33.416 +05:30 [INF] Hosting environment: Development
+2024-05-15 19:10:33.418 +05:30 [INF] Content root path: C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\EMS
+2024-05-15 19:16:30.429 +05:30 [INF] Application is shutting down...

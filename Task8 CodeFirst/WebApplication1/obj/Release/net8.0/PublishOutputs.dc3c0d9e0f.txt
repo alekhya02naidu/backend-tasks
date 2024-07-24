@@ -1,0 +1,11 @@
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\WebApplication1.exe
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\WebApplication1.dll
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\WebApplication1.deps.json
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\WebApplication1.runtimeconfig.json
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\WebApplication1.pdb
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\alekhya.n\Desktop\html\Task8 CodeFirst\WebApplication1\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
